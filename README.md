@@ -7,7 +7,8 @@
 
 ## 📌 Project Overview  
 Brain tumors are one of the most critical health concerns globally. Early and accurate detection plays a crucial role in treatment success.  
-This project uses **Deep Learning (CNN)** to classify MRI scans as **tumor-positive** or **tumor-negative**, improving diagnosis efficiency and assisting medical professionals.  
+This project uses **Deep Learning (CNN)** to classify MRI scans into **four tumor types**, improving diagnosis efficiency and assisting medical professionals.
+  
 
 ---
 
@@ -28,13 +29,16 @@ Upload an MRI scan and let the model predict whether a tumor is present.
 
 ---
 
-## 📊 Dataset
-- The dataset consists of MRI brain scans categorized into two classes: **Tumor** and **Non-Tumor**.  
-- Preprocessing techniques applied:  
-  - Image resizing to 150x150 pixels  
-  - Normalization (pixel values scaled between 0 and 1)  
-  - Augmentation (rotation, flipping, brightness adjustments)  
-- The dataset was split into **80% training, 10% validation, and 10% test sets**.  
+## 📊 Dataset  
+- The dataset consists of MRI brain scans categorized into four classes: **Glioma, Meningioma, Pituitary, and No Tumor**.  
+- **Preprocessing techniques applied**:  
+  - Image resizing to **150x150 pixels**  
+  - **Normalization** (pixel values scaled between 0 and 1)  
+  - **Data Augmentation** (rotation, flipping, brightness adjustments)  
+- **Dataset Split**:  
+  - **80%** Training  
+  - **10%** Validation  
+  - **10%** Testing    
 
 ---
 
@@ -81,11 +85,6 @@ streamlit run app.py
 
 ### 🔹 Sample Predictions  
 ![Predictions Screenshot](https://github.com/Raghavendra317/Brain-Tumor-Detection/blob/main/Screenshot%20(158).png)  
-
----
-
-## 📜 License
-This project is licensed under the **MIT License** – you are free to modify and distribute it.  
 
 ---
 
