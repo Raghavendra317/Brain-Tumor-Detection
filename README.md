@@ -12,7 +12,7 @@ This project uses **Deep Learning (CNN)** to classify MRI scans as **tumor-posit
 ---
 
 ## 🖥️ Demo  
-🔗 **Live Deployment:** [Streamlit App](https://your-streamlit-app-url)  
+🔗 **Live Deployment:** [Streamlit App](https://brain-tumor-detection-hwypnvhumt5bt38xz3qbzu.streamlit.app/)  
 
 Upload an MRI scan and let the model predict whether a tumor is present.  
 
