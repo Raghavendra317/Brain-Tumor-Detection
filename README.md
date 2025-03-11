@@ -80,7 +80,7 @@ streamlit run app.py
 ![App Screenshot](https://github.com/Raghavendra317/Brain-Tumor-Detection/blob/main/Screenshot%20(157).png)  
 
 ### 🔹 Sample Predictions  
-![Predictions Screenshot](https://user-images.githubusercontent.com/your-image-url)  
+![Predictions Screenshot](https://github.com/Raghavendra317/Brain-Tumor-Detection/blob/main/Screenshot%20(158).png)  
 
 ---
 
