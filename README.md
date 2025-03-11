@@ -1,5 +1,5 @@
 # 🧠 Brain Tumor Detection - Deep Learning  
-![Brain Tumor Detection](https://user-images.githubusercontent.com/your-image-url)  
+![Brain Tumor Detection](https://github.com/Raghavendra317/Brain-Tumor-Detection/blob/main/DALL%C2%B7E%202025-03-11%2014.14.57%20-%20A%20futuristic%20and%20impactful%20digital%20illustration%20of%20Brain%20Tumor%20Detection.%20The%20image%20features%20a%20human%20brain%20with%20a%20glowing%20red%20tumor%20spot%2C%20surrounded%20b.webp)  
 
 ### 🚀 An AI-powered solution to detect brain tumors from MRI scans using Deep Learning.  
 
