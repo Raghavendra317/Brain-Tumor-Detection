@@ -6,12 +6,15 @@ import os
 from PIL import Image
 
 # Title
-st.title("🧠 Brain Tumor Detection App")
-st.write("Upload an MRI scan to predict whether the brain has a tumor.")
+st.title("🧠 Brain Tumor Classification App")
+st.write("Upload an MRI scan to classify the type of brain tumor.")
 
 # Define model path and GitHub release URL
 MODEL_PATH = "brain_tumor_model.keras"
 MODEL_URL = "https://github.com/Raghavendra317/Brain-Tumor-Detection/releases/download/v1.0/brain_tumor_model.keras"
+
+# Class Labels
+CLASS_NAMES = ["Glioma Tumor", "Meningioma Tumor", "Pituitary Tumor", "No Tumor"]
 
 # Function to download model if not present
 def download_model():
@@ -49,11 +52,15 @@ if uploaded_file is not None:
     processed_image = preprocess_image(image)
 
     # Make prediction
-    prediction = model.predict(processed_image)[0][0]
+    prediction = model.predict(processed_image)
+    predicted_class = np.argmax(prediction)  # Get the class index
+    confidence = np.max(prediction) * 100    # Get confidence score
 
     # Display Result
-    st.subheader("🔍 Prediction:")
-    if prediction > 0.5:
-        st.error("🚨 Brain Tumor Detected!")
-    else:
-        st.success("✅ No Brain Tumor Detected!")
+    st.subheader("🔍 Classification Result:")
+    st.write(f"**Predicted Class:** {CLASS_NAMES[predicted_class]}")
+    st.write(f"**Confidence:** {confidence:.2f}%")
+    
+    # Show warning if confidence is low
+    if confidence < 60:
+        st.warning("⚠️ The model is uncertain about this prediction. Consider rechecking with another scan.")
