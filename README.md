@@ -77,7 +77,7 @@ streamlit run app.py
 
 ## 📸 Screenshots
 ### 🔹 Web App Interface  
-![App Screenshot](https://user-images.githubusercontent.com/your-image-url)  
+![App Screenshot](https://github.com/Raghavendra317/Brain-Tumor-Detection/blob/main/Screenshot%20(157).png)  
 
 ### 🔹 Sample Predictions  
 ![Predictions Screenshot](https://user-images.githubusercontent.com/your-image-url)  
